@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox id="root1" alignment="CENTER" prefHeight="800.0" prefWidth="1500.0" style="-fx-background-color: #534f50;" stylesheets="@mainstill.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nyp_proje.SyllabusScene">
+   <children>
+      <VBox alignment="CENTER" prefHeight="800.0" prefWidth="1500.0" spacing="20.0">
+         <children>
+            <TableView id="window2" fx:id="table" editable="true" maxWidth="-Infinity" pickOnBounds="false" prefHeight="690.0" prefWidth="1450.0" style="-fx-fixed-cell-size: 127;" stylesheets="@prgstill.css">
+              <columns>
+                <TableColumn fx:id="timeCol" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Time" />
+                  <TableColumn fx:id="mondayCol" prefWidth="200.0" sortable="false" text="Monday" />
+                  <TableColumn fx:id="tuesdayCol" prefWidth="200.0" sortable="false" text="Tuesday" />
+                  <TableColumn fx:id="wednesdayCol" prefWidth="200.0" sortable="false" text="Wednesday" />
+                  <TableColumn fx:id="thursdayCol" prefWidth="200.0" sortable="false" text="Thursday" />
+                  <TableColumn fx:id="fridayCol" prefWidth="200.0" sortable="false" text="Friday" />
+                  <TableColumn fx:id="saturdayCol" prefWidth="200.0" sortable="false" text="Saturday" />
+                  <TableColumn fx:id="sundayCol" prefWidth="200.0" sortable="false" text="Sunday" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1450.0" spacing="100.0">
+               <children>
+                  <Button alignment="CENTER" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#addScene" text="Add/Update Course" />
+                  <Button alignment="CENTER" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#saveToFile" text="Save" />
+                  <Button alignment="CENTER" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#turnBack" text="Back" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

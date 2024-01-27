@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox id="root1" alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #534f50;" stylesheets="@mainstill.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nyp_proje.AddScene">
+   <children>
+      <VBox id="root" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: #534f50;" stylesheets="@mainstill.css">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Button alignment="CENTER" layoutX="450.0" layoutY="320.0" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#close" text="Close" />
+                  <Button alignment="CENTER" layoutX="150.0" layoutY="320.0" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#addCourse" onMouseExited="#delWarn" text="Add Course" />
+                  <Button alignment="CENTER" layoutX="300.0" layoutY="320.0" minHeight="30.0" minWidth="100.0" mnemonicParsing="false" onAction="#delCourse" onMouseExited="#delWarn" text="Delete Course" />
+                  <TextField fx:id="name" layoutX="300.0" layoutY="150.0" prefHeight="20.0" prefWidth="200.0" promptText="Object Oriented Programming" />
+                  <Label layoutX="150.0" layoutY="150.0" prefHeight="20.0" prefWidth="100.0" text="Course Name:" textFill="WHITE" />
+                  <TextField fx:id="classroom" layoutX="300.0" layoutY="270.0" prefHeight="20.0" prefWidth="200.0" promptText="RTET4.Z06" />
+                  <Label layoutX="150.0" layoutY="270.0" prefHeight="20.0" prefWidth="100.0" text="Classroom:" textFill="WHITE" />
+                  <TextField fx:id="teacher" layoutX="300.0" layoutY="230.0" prefHeight="20.0" prefWidth="200.0" promptText="Dr. Öğr. Üyesi EYÜP EMRE ÜLKÜ" />
+                  <Label layoutX="150.0" layoutY="230.0" prefHeight="20.0" prefWidth="100.0" text="Course Teacher:" textFill="WHITE" />
+                  <TextField fx:id="code" layoutX="300.0" layoutY="190.0" prefHeight="20.0" prefWidth="200.0" promptText="BLM2005.2" />
+                  <Label layoutX="150.0" layoutY="190.0" prefHeight="20.0" prefWidth="100.0" text="Course Code:" textFill="WHITE" />
+                  <ChoiceBox fx:id="courseTime" layoutX="300.0" layoutY="20.0" prefHeight="20.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="courseDay" layoutX="300.0" layoutY="70.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label layoutX="200.0" layoutY="20.0" prefHeight="20.0" prefWidth="100.0" text="Course Time:" textFill="WHITE" />
+                  <Label layoutX="200.0" layoutY="70.0" prefHeight="20.0" prefWidth="100.0" text="Course Day:" textFill="WHITE" />
+                  <Label fx:id="warn" layoutX="200.0" layoutY="366.0" prefHeight="20.0" prefWidth="300.0" textFill="RED">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="courseType" layoutX="300.0" layoutY="120.0" prefHeight="20.0" prefWidth="150.0" />
+                  <Label layoutX="200.0" layoutY="120.0" prefHeight="20.0" prefWidth="100.0" text="Course Type:" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>
